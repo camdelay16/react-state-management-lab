@@ -1,16 +1,25 @@
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 li {
   list-style: none;
   margin: 10px;
 }
 
-.team-container {
+#team-container {
   margin: 10px;
   padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.available-container {
+#available-container {
   margin: 10px;
   padding: 10px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }

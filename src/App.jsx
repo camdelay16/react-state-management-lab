@@ -112,9 +112,9 @@ const App = () => {
       {team.length === 0 ? (
         <p>Pick some team members!</p>
       ) : (
-        <ul>
-          {team.map((fighter, idx) => (
-            <div className="team-container">
+        <div id="team-container">
+          <ul>
+            {team.map((fighter, idx) => (
               <li key={idx}>
                 <img src={fighter.img} alt={fighter.name} />
                 <h3>{fighter.name}</h3>
@@ -125,14 +125,14 @@ const App = () => {
                   Remove from Team
                 </button>
               </li>
-            </div>
-          ))}
-        </ul>
+            ))}
+          </ul>
+        </div>
       )}
 
       <h2>Available Fighters</h2>
-      <ul>
-        <div className="available-container">
+      <div id="available-container">
+        <ul>
           {zombieFighters.map((fighter, idx) => (
             <li key={idx}>
               <img src={fighter.img} alt={fighter.name} />
@@ -145,8 +145,8 @@ const App = () => {
               </button>
             </li>
           ))}
-        </div>
-      </ul>
+        </ul>
+      </div>
     </div>
   );
 };
